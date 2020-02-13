@@ -1,21 +1,20 @@
 # test_utils.py
-# Author: Sébastien Combéfis
-# Version: February 8, 2018
+
 
 import unittest
 import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        # À compléter...
+        self.assertEqual(utils.fact(3),6)
         pass
     
     def test_roots(self):
-        # À compléter...
+        self.assertEqual(utils.roots(0,1,-1),1)
         pass
     
     def test_integrate(self):
-        # À compléter...
+        self.assertEqual(utils.integrate(1,0,1),1)
         pass
 
 if __name__ == '__main__':
