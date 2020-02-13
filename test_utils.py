@@ -10,11 +10,12 @@ class TestUtils(unittest.TestCase):
         pass
     
     def test_roots(self):
-        self.assertEqual(utils.roots(0,1,-1),1)
+        self.assertEqual(utils.roots(1,0,0),(0,0))
         pass
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate(1,0,1),1)
+        y = 1
+        self.assertEqual(utils.integrate((lambda x: 1),0,1),y)
         pass
 
 if __name__ == '__main__':
